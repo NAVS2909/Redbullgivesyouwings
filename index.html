@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Year 12 school project advertising Red Bull Energy Drink.">
+  <title>Red Bull Gives You Wings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#home" aria-label="Red Bull home">
+        <span class="brand-mark">🐂</span>
+        <span><b>RED</b> BULL</span>
+      </a>
+      <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+      <ul class="links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">RED BULL ENERGY DRINK</p>
+        <h1>GIVES YOU <span>WINGS.</span></h1>
+        <p class="lead">Energy for your next move. Discover the brand behind one of the world's most recognisable energy drinks.</p>
+        <div class="actions">
+          <a class="btn primary" href="#products">Explore Products</a>
+          <a class="btn ghost" href="#about">Discover the Brand</a>
+        </div>
+      </div>
+      <div class="hero-can reveal">
+        <div class="can-shadow"></div>
+        <div class="can">
+          <span class="can-top">RED BULL</span>
+          <span class="bulls">🐂</span>
+          <strong>ENERGY<br>DRINK</strong>
+          <small>250 ml</small>
+        </div>
+        <p>ENERGY • FOCUS • ACTION</p>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>1987</strong><span>Brand launched</span></div>
+      <div><strong>WINGS</strong><span>Iconic slogan</span></div>
+      <div><strong>GLOBAL</strong><span>Worldwide presence</span></div>
+      <div><strong>ACTION</strong><span>Sports & culture</span></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE BRAND</p>
+        <h2>BUILT FOR PEOPLE<br><span>WHO MOVE.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Red Bull is an energy drink brand founded in 1987. The brand is widely recognised for its distinctive identity and its involvement in sports, racing, adventure, music and entertainment.</p>
+          <p>This school project presents Red Bull as an advertising campaign, showing how strong branding, visual design and a clear message can create a memorable customer experience.</p>
+          <a class="text-link" href="#experience">See the experience →</a>
+        </div>
+        <div class="quote-card reveal">
+          <div class="rings"></div>
+          <p>“GIVES YOU WINGS.”</p>
+          <span>— Brand slogan</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="products">
+      <div class="section-heading reveal">
+        <p class="eyebrow">EXPLORE THE RANGE</p>
+        <h2>FIND YOUR <span>ENERGY.</span></h2>
+      </div>
+      <div class="products">
+        <article class="product reveal">
+          <div class="can mini classic"><span>🐂</span><b>RED BULL</b><small>ENERGY DRINK</small></div>
+          <h3>Red Bull Energy Drink</h3>
+          <p>The classic Red Bull Energy Drink presentation.</p>
+          <button onclick="productInfo('Red Bull Energy Drink')">View details</button>
+        </article>
+        <article class="product reveal">
+          <div class="can mini silver"><span>🐂</span><b>RED BULL</b><small>SUGARFREE</small></div>
+          <h3>Red Bull Sugarfree</h3>
+          <p>A sugar-free option within the Red Bull range.</p>
+          <button onclick="productInfo('Red Bull Sugarfree')">View details</button>
+        </article>
+        <article class="product reveal">
+          <div class="can mini blue"><span>🐂</span><b>RED BULL</b><small>ZERO</small></div>
+          <h3>Red Bull Zero</h3>
+          <p>A zero-sugar option for a different taste experience.</p>
+          <button onclick="productInfo('Red Bull Zero')">View details</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MORE THAN A DRINK</p>
+        <h2>ENERGY MEETS <span>ACTION.</span></h2>
+      </div>
+      <div class="experience-grid">
+        <div class="experience-card racing reveal"><span>01</span><h3>RACING</h3><p>Speed, competition and high-performance motorsport are a major part of the brand's identity.</p></div>
+        <div class="experience-card adventure reveal"><span>02</span><h3>ADVENTURE</h3><p>From extreme sports to ambitious challenges, Red Bull connects its brand with adventure.</p></div>
+        <div class="experience-card music reveal"><span>03</span><h3>MUSIC & CULTURE</h3><p>Events and creative projects help Red Bull connect with audiences beyond traditional advertising.</p></div>
+      </div>
+    </section>
+
+    <section class="section dark" id="gallery">
+      <div class="section-heading reveal">
+        <p class="eyebrow">THE WORLD OF RED BULL</p>
+        <h2>MAKE IT <span>COUNT.</span></h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-card g1 reveal"><span>ENERGY</span></div>
+        <div class="gallery-card g2 reveal"><span>SPORT</span></div>
+        <div class="gallery-card g3 reveal"><span>ADVENTURE</span></div>
+        <div class="gallery-card g4 reveal"><span>RACING</span></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>READY TO <span>FLY?</span></h2>
+      </div>
+      <form id="contactForm" class="contact-form reveal">
+        <div class="form-row">
+          <input id="name" type="text" placeholder="Your name" required>
+          <input id="email" type="email" placeholder="Your email" required>
+        </div>
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+        <button class="btn primary" type="submit">SEND MESSAGE</button>
+      </form>
+      <p class="school-note">School project website • Educational use</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">🐂 <span>RED BULL</span></div>
+    <p>Gives You Wings.</p>
+    <div class="footer-links"><a href="#home">Home</a><a href="#products">Products</a><a href="#contact">Contact</a></div>
+    <small>© 2026 School Project. This site is an independent educational project and is not an official Red Bull website.</small>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
